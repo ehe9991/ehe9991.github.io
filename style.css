@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  width: 100vw;
+  min-width: fit-content;
+  height: 30vw;
+  min-height: fit-content;
+  padding-top: 5vw;
+  padding-bottom: 10vw;
+  color: white;
+  text-shadow: 0 0 10px #000000;
+  background-image: linear-gradient(
+      rgba(129, 129, 129, 0.5),
+      rgba(129, 129, 129, 0.5)
+    ),
+    url("./assets/imgs/headerImg.png");
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerSub {
+  padding-top: 1.25vw;
+  font-size: 2.25vw;
+  font-weight: 300;
+}
+
+.headerBtn {
+  border: solid 3px white;
+  border-radius: 15px;
+  font-size: 2.5vw;
+  font-weight: 500;
+  padding: 5px 3vw;
+  width: fit-content;
+  height: max-content;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header a {
+  color: white;
+}
+
+.headerBtn:hover {
+  background-color: white;
+  color: black;
+  text-shadow: none;
+}
+
+.reports {
+  display: flex;
+  overflow: hidden;
+  max-width: 100vw;
+  height: 37vw;
+  flex-direction: row;
+}
+
+.door1,
+.door2,
+.door3,
+.door4,
+.door5,
+.door6,
+.door7,
+.door8 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  filter: saturate(0);
+}
+.door1 {
+  background-image: url("./assets/imgs/Door1.png");
+}
+.door1 a {
+  color: #ff8989;
+}
+.door2 {
+  background-image: url("./assets/imgs/Door2.png");
+}
+.door2 a {
+  color: #ffd089;
+}
+.door3 {
+  background-image: url("./assets/imgs/Door3.png");
+}
+.door3 a {
+  color: #f8ec88;
+}
+.door4 {
+  background-image: url("./assets/imgs/Door4.png");
+}
+.door4 a {
+  color: #bdff89;
+}
+.door5 {
+  background-image: url("./assets/imgs/Door5.png");
+}
+.door5 a {
+  color: #89e3ff;
+}
+
+.door6 a,
+.door7 a,
+.door8 a {
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.door6 {
+  background-image: url("./assets/imgs/Door6.png");
+}
+.door6 a {
+  background-image: linear-gradient(#8995ff, #89cdff);
+}
+.door7 {
+  background-image: url("./assets/imgs/Door7.png");
+}
+.door7 a {
+  background-image: linear-gradient(#e089ff, rgba(255, 137, 194, 0.76));
+}
+.door8 {
+  background-image: url("./assets/imgs/Door8.png");
+}
+.door8 a {
+  background-image: linear-gradient(#ff89d7, #f65e83);
+}
+
+.doorBtn,
+.doorBtnBot {
+  width: fit-content;
+  padding: 1rem 2rem;
+  background-color: white;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 135%;
+  transition: all 0.2s ease-in-out;
+}
+
+.doorBtnBot {
+  margin-top: 80%;
+}
+
+.doorBtn:hover,
+.doorBtnBot:hover {
+  transform: scale(1.1);
+}
+
+.door1:hover,
+.door2:hover,
+.door3:hover,
+.door4:hover,
+.door5:hover,
+.door6:hover,
+.door7:hover,
+.door8:hover {
+  filter: none;
+}
+
+.footer {
+  width: 100vw;
+  height: 30vh;
+  color: white;
+  background-color: #5a5a5a;
+}
+
+.leftCol {
+  padding-left: 2rem;
+}
+
+.icon {
+  height: 5rem;
+  width: 5rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.footerText {
+  margin: 0 auto;
+  padding-bottom: 1.25rem;
+}
+
+@media only screen and (max-width: 980px) {
+  .doorBtn,
+  .doorBtnBot {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+  .headerSub {
+    font-size: 1rem;
+  }
+  .headerBtn {
+    font-size: 2vw;
+  }
+  .doorBtn,
+  .doorBtnBot {
+    font-size: 0.75rem;
+  }
+  .leftCol h1 {
+    font-size: 2rem;
+  }
+  .leftCol h3 {
+    font-size: 1.25rem;
+  }
+  .rightCol {
+    padding-right: 1rem;
+  }
+  .icon {
+    height: 4rem;
+    width: 4rem;
+  }
+  .footerText {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .header {
+    height: 40vw;
+  }
+  .header h1 {
+    font-size: 1.5rem;
+  }
+  .headerSub {
+    font-size: 0.75rem;
+  }
+  .headerBtn {
+    font-size: 1.5vw;
+  }
+  .doorBtn,
+  .doorBtnBot {
+    font-size: 0.5rem;
+  }
+  .footer {
+    height: 25vh;
+  }
+  .leftCol h1 {
+    font-size: 1.5rem;
+  }
+  .leftCol h3 {
+    font-size: 0.75rem;
+  }
+  .rightCol {
+    padding-right: 1rem;
+  }
+  .icon {
+    height: 3rem;
+    width: 3rem;
+  }
+  .footerText {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .doorBtn,
+  .doorBtnBot {
+    padding: 0.5rem 1rem;
+    margin-top: 150%;
+    font-size: 0.3rem;
+  }
+  .doorBtnBot {
+    margin-top: 90%;
+  }
+}
